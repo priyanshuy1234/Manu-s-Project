@@ -4,13 +4,16 @@ import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Login from './components/Login';
 import Register from './components/Register';
+import DietPlanner from './components/DietPlanner';
 import Dashboard from './components/Dashboard'; 
+import Exercise from './components/Exercise'; // Import Dashboard Component
 
 import './App.css';
 import './styles/Navbar.css';
 import './styles/HomePage.css';
 import './styles/Login.css';
 import './styles/Register.css';
+import './styles/DietPlanner.css';
 import './styles/Dashboard.css';  // Add a new CSS file for dashboard styling
 
 function App() {
@@ -21,7 +24,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/dietPlanner" element={< DietPlanner/>} />
         <Route path="/dashboard" element={<Dashboard />} /> 
+        <Route path="/exercise" element={<Exercise />} /> {/* Add Dashboard Route */}
       </Routes>
     </Router>
   );

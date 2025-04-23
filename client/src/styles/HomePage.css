@@ -402,9 +402,25 @@
   margin-top: 20px;
   border-radius: 10px;
 }
+.chatbot-shortcut {
+  position: fixed;
+  bottom: 20px;  /* Adjust as needed */
+  right: 20px;   /* Adjust as needed */
+  background-color: #ffc20e;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1001;  /* Ensure it's above other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
 
-
-
+.chatbot-shortcut:hover {
+  background-color: #FFD600;
+}
 /* Style the scrollbar */
 ::-webkit-scrollbar {
   width: 12px; /* Set width for vertical scrollbar */
